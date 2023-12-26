@@ -1,0 +1,360 @@
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.contact-head {
+  padding-top: 10rem;
+  text-align: center;
+  background-image: url(8.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100rem;
+  background-position-x: 0rem;
+  background-position-y: -15rem;
+  animation: opacity 2s;
+}
+
+.contact-info {
+  width: fit-content;
+  padding-left: 3rem;
+}
+.contact-info h1 {
+  font-size: 6vw;
+}
+
+.contact-info p {
+  width: 60%;
+  animation-name: opacity;
+  animation-duration: 2s;
+  text-align: center;
+  margin: auto;
+  margin-top: 1.4rem;
+  font-size: 1.2rem;
+}
+
+.contactus-page {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(39, 39, 39);
+  width: 89%;
+  align-items: center;
+  margin: auto;
+  margin-top: 16rem;
+  border-radius: 33px;
+  height: 100vh;
+}
+
+.cnt-info {
+  width: 33%;
+  background: #ff547d;
+  background-image: linear-gradient(141deg, #f44336, transparent);
+  height: 80vh;
+  margin-left: 3rem;
+  border-radius: 23px;
+}
+
+.cnt-info h2 {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.cnt-info-para {
+  margin-left: 2rem;
+  margin-top: 10px;
+  margin-bottom: 16rem;
+}
+.cnt-info .cnt-icon {
+  margin-left: 2rem;
+  padding-top: 12px;
+}
+
+.cnt-form {
+  margin: auto;
+}
+.cnt-form-flex {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 2rem;
+}
+
+.cnt-form input {
+  background: rgb(54, 54, 54);
+  height: 4rem;
+  border-radius: 9px;
+  border: none;
+  width: 23vw;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.cnt-form .form-name {
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.cnt-form .form-name input {
+  width: 100%;
+}
+.cnt-form .form-name p {
+  padding-bottom: 10px;
+}
+.cnt-form-flex p {
+  padding-bottom: 10px;
+}
+
+.form-message p {
+  padding-bottom: 10px;
+}
+
+.form-message textarea {
+  border-radius: 12px;
+  background: rgb(54, 54, 54);
+  height: 9rem;
+  color: white;
+  font-size: 16px;
+}
+
+.cnt-form button {
+  margin-top: 10px;
+  padding: 6px 23px;
+  border-radius: 11px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.footer {
+  padding-top: 2rem;
+}
+
+.logo-ft {
+  width: 22rem;
+  padding-right: 2rem;
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.cnt-form button:hover {
+  background-color: rgb(190, 36, 36);
+  transition: 0.3s ease-in;
+  transform: scale(1.1);
+  color: white;
+  animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@media (max-width: 962px) {
+  .cnt-info-para {
+    margin-left: 2rem;
+    margin-top: 10px;
+    margin-bottom: 7rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .cnt-info-para {
+    margin-left: 2rem;
+    margin-top: 10px;
+    margin-bottom: 7rem;
+  }
+}
+@media (max-width: 810px) {
+  .cnt-info-para {
+    margin-left: 2rem;
+    margin-top: 10px;
+    margin-bottom: 5rem;
+  }
+  .contentbanner {
+    padding-top: 2rem;
+    display:none;
+  }
+}
+@media (max-width: 768px) {
+  .contentbanner {
+    padding-top: 2rem;
+  }
+   .contact-info h1 {
+    font-size: 11vw;
+}
+}
+@media (max-width: 601px) {
+  .cnt-info {
+    width: 41%;
+    height: 80vh;
+    margin-left: 0.3rem;
+  }
+  .contact-info h1 {
+    font-size: 11vw;
+}
+  .cnt-info h2 {
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+    font-size: 21px;
+    width: 88%;
+  }
+  .cnt-info-para {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10rem;
+    font-size: 14px;
+    text-align: center;
+  }
+  .cnt-info .cnt-icon {
+    margin-left: 2rem;
+    padding-top: 12px;
+    font-size: 12px;
+  }
+  .cnt-form p {
+    font-size: 12px;
+  }
+  .form-message textarea {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 425px) {
+  .contentbanner {
+    background-image: url(mobilebg.png);
+  }
+  .contact-info {
+    animation: opacity 2s;
+    width: fit-content;
+    padding-left: 0rem;
+  }
+  .contact-info p {
+    width: 86%;
+    font-size: 17px;
+  }
+  .contactus-page {
+    display: block;
+    height: 161vh;
+  }
+  .cnt-info {
+    width: auto;
+    height: 39vh;
+    margin-left: 0;
+    border-radius: 12px 12px 0 0;
+  }
+  .cnt-info h2 {
+    padding-top: 32px;
+  }
+  .cnt-info-para {
+    margin-bottom: 5rem;
+  }
+  .cnt-icons {
+    display: flex;
+    justify-content: space-around;
+  }
+  .cnt-info .cnt-icon {
+    margin-left: 0;
+  }
+  .cnt-form-flex {
+    display: block;
+  }
+  .cnt-form .form-name input {
+    width: 90%;
+    height: 8vh;
+    margin-left: 1rem;
+  }
+  .cnt-form input {
+    width: 90%;
+    height: 8vh;
+    margin-left: 1rem;
+  }
+  .form-num {
+    margin-top: 2rem;
+  }
+  .cnt-form p {
+    font-size: 14px;
+    margin-left: 1rem;
+  }
+  .form-message textarea {
+    font-size: 12px;
+    width: 90%;
+    margin-left: 1rem;
+  }
+  .cnt-form button {
+    margin-top: 35px;
+    padding: 6px 23px;
+    border-radius: 11px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 9rem;
+  }
+  .contact-head {
+    padding-top: 18rem;
+    text-align: center;
+    background-image: url(8.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100rem;
+    background-position-x: 0rem;
+    background-position-y: -4rem;
+    animation: opacity 2s;
+}
+}
+@media (max-width: 382px) {
+  .contact-info h1 {
+    font-size: 54px;
+  }
+  .contactus-page {
+    display: block;
+    height: auto;
+  }
+  .cnt-form button {
+    margin-top: 27px;
+    margin-left: 8rem;
+    margin-bottom: 3vh;
+  }
+  .cnt-icons {
+    margin-top: 7rem;
+  }
+  .contact-head {
+    padding-top: 18rem;
+    text-align: center;
+    background-image: url(8.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100rem;
+    background-position-x: 0rem;
+    background-position-y: -4rem;
+    animation: opacity 2s;
+}
+}
+
+@media (max-width: 320px) {
+  .contact-info h1 {
+    font-size: 2.4rem;
+  }
+  .logo-ft {
+    width: auto;
+    padding-right: 2rem;
+  }
+  .contactus-page {
+    height: 145vh;
+  }
+  .cnt-info .cnt-icon {
+    font-size: 10px;
+  }
+  .cnt-info h2 {
+    padding-top: 1rem;
+  }
+  .cnt-form button {
+    margin-left: 6rem;
+  }
+}
