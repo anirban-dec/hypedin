@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+        integrity="sha384T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1">
+    <script src="index.js"></script>
+
+    <title>Hypedin</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li> <a href="index.html" class="logo"><img src="Hypedin.png" alt="Hypedin Logo"></a></li>
+            <div class="nav-menu-links">
+                <li class="hideOnMobile"><a href="index.html" class="notactive">Home</a>
+                </li>
+                <li class="hideOnMobile"><a href="service.html" class="notactive">Service</a>
+                </li>
+                <li class="hideOnMobile"><a href="aboutus.html" class="notactive">About</a>
+                </li>
+                <!-- <li><a href="#">Blog</a></li> -->
+                <li class="hideOnMobile"><a href="contactus.html" class="active">Contact</a>
+            </div>
+            <li class="hideOnMobile"> <a href="contactus.html#booknow"><button type="submit">Book a
+                        call</button></a></li>
+            <li class="menuButton" onclick="showSidebar()">
+                <p><i class="fa fa-bars notactive"></i></p>
+            </li>
+        </ul>
+        <ul class="sidebar">
+            <li class=" cross" onclick="hideSidebar()">
+                <p class="notactive" style="font-size: 26px;"><b>x</b></p>
+            </li>
+            <li><a href="index.html" class="notactive">Home</a>
+            </li>
+            <li><a href="service.html" class="notactive">Service</a>
+            </li>
+            <li><a href="aboutus.html" class="notactive">About</a>
+            </li>
+            <!-- <li><a href="#">Blog</a></li> -->
+            <li><a href="contactus.html" class="active">Contact</a>
+
+        </ul>
+
+
+
+
+    </nav>
+    <div class="contentbanner"></div>
+
+    <div class="contact-head">
+        <div class="contact-info">
+            <h1>Contact Us</h1>
+            <p>Need help? Contact Hypedin today. We're here to empower your digital journey
+                and answer any questions you have. Let's connect! </p>
+        </div>
+    </div>
+    <div class="contactus-page" id="booknow">
+        <div class="cnt-info">
+            <h2>Contact Information</h2>
+            <p class="cnt-info-para">Captivate Clients with Irresistible Solutions and Unmatched Excellence.</p>
+            <div class="cnt-icons">
+                <p class="cnt-icon"><i class="fa fa-phone"></i> +91 843-927-9315</p>
+                <p class="cnt-icon"><i class="fa fa-envelope"></i> team@hypedin.co</p>
+                <p class="cnt-icon"><i class="fa fa-map-pin"></i> Delhi</p>
+            </div>
+        </div>
+        <div class="cnt-form">
+            <form action="https://formsubmit.io/send/hypedin.co@gmail.com" method="POST">
+                <div class="form-name">
+                    <p>Name*</p>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="cnt-form-flex">
+                    <div class="form-email">
+                        <p>Email*</p>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="form-num">
+                        <p>Contact*</p>
+                        <input type="text" name="contact" required>
+                    </div>
+                </div>
+                <div class="form-message">
+                    <p>Message*</p>
+                    <textarea name="Message" cols="10" rows="5" required> I want To Book A Free Consultation</textarea>
+                </div>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo-ft">
+            <img src="Hypedin.png" alt="">
+            <p>Leading digital marketing agency in Delhi, partners with top brands, delivers
+                tailored digital solutions for lasting online success.</p>
+            <a href="https://www.instagram.com/hypedin.co/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/hypedin/"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="footer-info">
+            <div class="service-ft">
+                <a href="service.html">
+                    <h3>Service</h3>
+                </a>
+                <a href="service.html">
+                    <p>Campus Promotion</p>
+                </a>
+                <a href="service.html">
+                    <p>User Acquisition</p>
+                </a>
+                <a href="service.html">
+                    <p>Event Management</p>
+                </a>
+                <a href="service.html">
+                    <p>Digital Outreach</p>
+                </a>
+                <a href="service.html">
+                    <p>Sponsorships</p>
+                </a>
+
+
+            </div>
+            <div class="links-ft">
+                <h3>Quick Links</h3>
+                <a href="index.html">
+                    <p>Home</p>
+                </a>
+                <a href="aboutus.html">
+                    <p>About</p>
+                </a>
+                <a href="service.html">
+                    <p>Service</p>
+                </a>
+                <a href="#">
+                    <p>Blog</p>
+                </a>
+                <a href="contactus.html">
+                    <p>Contact</p>
+                </a>
+            </div>
+            <div class="contact-ft">
+                <h3>Get in Touch</h3>
+                <p>India</p>
+                <p>Email: team@hypedin.co</p>
+                <p> Phone: +91 843-927-9315</p>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = "flex";
+
+
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = "none";
+
+        }
+
+    </script>
+</body>
+
+</html>

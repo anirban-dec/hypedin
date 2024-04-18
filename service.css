@@ -1,0 +1,432 @@
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.service-head {
+  padding-top: 0rem;
+  animation: opacity 2s ease-in;
+  padding-top: 10rem;
+  background-image: url(8.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100rem;
+  background-position-x: 0rem;
+  background-position-y: -15rem;
+}
+.service-head h1 {
+  font-size: 6vw;
+  text-align: center;
+}
+
+.service-head p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.service-box {
+  margin-bottom: 2rem;
+}
+
+.work-with-us {
+  margin-top: 10rem;
+}
+
+.work-with-us-img {
+  display: flex;
+}
+
+.work-with-us-img .img2 {
+  width: 28rem;
+  height: 33rem;
+}
+
+.work-with-us-2 {
+  border: 2px solid rgb(231, 230, 230);
+}
+.work-with-us-head {
+  background-color: rgb(63, 60, 60);
+}
+.work-with-us-info {
+  background-color: rgb(63, 60, 60);
+}
+
+.book-a-call {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(51, 51, 51);
+  width: 70vw;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.book-a-call a {
+  text-decoration: none;
+  color: rgb(255, 57, 57);
+}
+.book-a-call a:hover {
+  color: white;
+  transition: 0.2s;
+}
+
+.trust {
+  margin-top: 10rem;
+}
+
+.faq {
+  min-height: auto;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -23rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.faq2 {
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid white;
+  cursor: pointer;
+  background: rgb(39, 39, 39);
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question h3 {
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+}
+
+.answer {
+  max-height: 300px;
+  transition: 0.8s ease;
+}
+
+.answer p {
+  padding-top: 1rem;
+  line-height: 1.6;
+  font-size: 15px;
+  animation: fade2 1s ease-in-out;
+}
+i {
+  transition: 0.5s;
+}
+
+.faq2.active .answer {
+  max-height: 0px;
+  overflow: hidden;
+}
+.faq2.active i {
+  transform: rotate(180deg);
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+@keyframes fade2 {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.moreque {
+  text-align: center;
+  margin-top: 4rem;
+}
+.moreque span {
+  color: rgb(255, 57, 57);
+}
+
+.service-service2 {
+  margin-top: 4rem;
+}
+.service-cntbtn {
+  margin-top: 0;
+  margin-left: 30%;
+}
+
+@media (max-width: 1024px) {
+  .work-with-us-img .img2 {
+    width: 26rem;
+    height: 32rem;
+  }
+  .work-with-us-2 {
+    width: 49%;
+  }
+  .work-with-us-section .work-with-us-head p {
+    width: auto;
+  }
+  .work-with-us-info p {
+    width: auto;
+  }
+}
+@media (max-width: 900px) {
+  .title {
+    font-size: 37px;
+  }
+  .service-head h1 {
+    font-size: 10vw;
+    text-align: center;
+  }
+}
+@media (max-width: 810px) {
+  .service-head {
+    margin-top: 0rem;
+  }
+  .title {
+    font-size: 37px;
+  }
+}
+@media (max-width: 768px) {
+  .book-a-call {
+    width: 88vw;
+    margin-left: 8%;
+  }
+  .work-with-us {
+    margin-top: 13rem;
+  }
+  .title {
+    font-size: 36px;
+  }
+}
+
+@media (width: 701px) {
+  .company img {
+    width: 7rem;
+  }
+}
+
+@media (max-width: 601px) {
+  .service-head h1 {
+    font-size: 11vw;
+    text-align: center;
+  }
+  .work-with-us {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .work-with-us-2 {
+    width: auto;
+    margin: 2rem;
+  }
+  .work-with-us-img .img2 {
+    margin: auto;
+    margin-top: 2rem;
+    width: 23rem;
+    height: 29rem;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .question h3 {
+    font-size: 14px;
+  }
+  .answer p {
+    font-size: 12px;
+  }
+  .service-cntbtn {
+    margin-top: 0;
+    margin-left: 37%;
+  }
+}
+@media (max-width: 426px) {
+  .service-img {
+    background-size: 252vw;
+  }
+  .service-head {
+    margin-top: 0rem;
+  }
+  .service-box {
+    margin-top: 18vh;
+  }
+  .service-head h1 {
+    font-size: 11vw;
+    text-align: center;
+  }
+  .service-head p {
+    text-align: center;
+    font-size: 15px;
+  }
+  .service-info {
+    width: 60%;
+    margin: auto;
+    background-color: rgb(29, 29, 29);
+    margin-top: 3rem;
+  }
+  .book-a-call {
+    width: 88vw;
+    margin-left: 4%;
+    display: block;
+  }
+  .title {
+    font-size: 31px;
+  }
+  .question h3 {
+    font-size: 15px;
+  }
+  .service-cntbtn {
+    margin-top: 6px;
+    margin-left: 33%;
+    width: auto;
+  }
+  .trust {
+    width: auto;
+  }
+}
+@media (max-width: 390px) {
+  .work-with-us-img .img2 {
+    margin: auto;
+    margin-top: 2rem;
+    width: 17rem;
+    height: 24rem;
+  }
+  .trust {
+    margin-top: 6rem;
+  }
+  .service-cntbtn {
+    margin-top: auto;
+    margin-left: 33%;
+  }
+  .service-head h1 {
+    font-size: 11vw;
+    text-align: center;
+  }
+}
+@media (max-width: 370px) {
+  .faq {
+    margin-top: -33rem;
+  }
+  .question h3 {
+    font-size: 14px;
+  }
+  .book-a-call {
+    height: auto;
+  }
+  .service-cntbtn {
+    margin-top: auto;
+    margin-left: 38%;
+  }
+  .book-a-call {
+    width: 88vw;
+    margin-left: 4%;
+  }
+  .logo-ft {
+    width: auto;
+    padding-right: 2rem;
+  }
+  .service-head h1 {
+    font-size: 11vw;
+    text-align: center;
+  }
+}
+@media (max-width: 323px) {
+  .work-with-us-section .work-with-us-head p {
+    width: 85%;
+    text-align: start;
+  }
+  .work-with-us-head {
+    background-color: rgb(36, 36, 29);
+    padding: 28px;
+    border-radius: 25px 25px 0 0;
+    width: 73vw;
+  }
+  .service-head h1 {
+    font-size: 15vw;
+    text-align: center;
+  }
+  .service-info {
+    width: 90%;
+    margin-top: -2rem;
+  }
+  .work-with-us-info {
+    background-color: rgb(36, 36, 29);
+    padding: 28px;
+    margin-top: -2px;
+    border-radius: 0 0 25px 25px;
+    width: 73vw;
+  }
+  .work-line-father {
+    width: 79%;
+    display: flex;
+  }
+  .work-with-us-section {
+    width: auto;
+  }
+  .work-with-us-img {
+    margin-top: 0rem;
+  }
+  .work-with-us-img .img1 {
+    width: 16rem;
+    height: 19rem;
+  }
+  .work-with-us-img .img2 {
+    width: 15rem;
+    height: 19rem;
+  }
+  .misvis .mission {
+    width: 91vw;
+    margin-top: 8rem;
+  }
+  .misvis .vision {
+    width: 91vw;
+    margin-top: -2rem;
+  }
+  .about-counter-grid {
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+  }
+  .about-counter-item {
+    width: 9rem;
+    height: 24vh;
+  }
+  .about-counter-item h2 {
+    margin-bottom: 8px;
+    margin-left: -1rem;
+  }
+  .service2 {
+    margin-top: 2rem;
+    width: 90vw;
+    height: 46vh;
+  }
+  .service-cntbtn {
+    margin-top: auto;
+    margin-left: 34%;
+  }
+  .moreque {
+    text-align: center;
+    margin-top: 4vh;
+  }
+  .about-cntbtn {
+    margin-top: -1rem;
+    margin-left: 36%;
+  }
+}

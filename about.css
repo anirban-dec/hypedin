@@ -1,0 +1,674 @@
+.about-head {
+  padding-top: 10rem;
+  text-align: center;
+  animation: opacity 3s;
+  background-image: url(8.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100rem;
+  background-position-x: 0rem;
+  background-position-y: -15rem;
+  padding-bottom: 5rem;
+}
+.about-head h1 {
+  font-size: 6vw;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.about-head p {
+  animation: opacity 2s;
+  width: 43rem;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.work-with-us {
+  margin-top: 15rem;
+}
+
+.work-with-us-img {
+  display: flex;
+}
+.work-with-us-img .img1 {
+  margin-right: -230px;
+  margin-top: 2rem;
+  width: 22rem;
+}
+.work-with-us-img .img2 {
+  width: 22rem;
+}
+
+.work-with-us-2 {
+  border: none;
+}
+.work-with-us-head {
+  background-color: transparent;
+}
+.work-with-us-info {
+  background-color: transparent;
+}
+.work-with-us-section .work-with-us-head p {
+  font-size: 15px;
+  line-height: 1.5rem;
+  margin-top: 10px;
+  width: 90%;
+}
+.work-with-us-info p {
+  font-size: 15px;
+  line-height: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 2rem;
+  width: 86%;
+}
+
+.trust {
+  margin-top: 6rem;
+}
+
+.misvis {
+  display: flex;
+  justify-content: center;
+  background-image: url(wave.png);
+  background-repeat: no-repeat;
+  background-position-y: -22rem;
+}
+.misvis .mission {
+  background-color: rgb(29, 29, 29);
+  height: 60vh;
+  width: 50%;
+  margin: 3rem;
+  border-radius: 33px;
+}
+.misvis .mission h2 {
+  text-align: center;
+  margin: auto;
+  padding: 0 3rem;
+  padding-top: 2rem;
+  font-size: 3rem;
+}
+.misvis .mission p {
+  text-align: center;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0 3rem;
+}
+.misvis .vision {
+  background-color: rgb(29, 29, 29);
+  height: 60vh;
+  width: 50%;
+  border-radius: 33px;
+  margin: 3rem;
+}
+.misvis .vision h2 {
+  text-align: center;
+  padding: 0 3rem;
+  padding-top: 2rem;
+  font-size: 3rem;
+}
+.misvis .vision p {
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0 3rem;
+}
+
+.numbers-head {
+  margin: auto;
+  text-align: center;
+  margin-top: 4rem;
+}
+.numbers-head h2 {
+  font-size: 3rem;
+}
+.numbers-head p {
+  font-size: 1.3rem;
+  margin: 1rem 0 4rem 0;
+}
+.book-a-call {
+  margin-top: 4rem;
+}
+
+.cnt-img {
+  display: flex;
+  align-items: center;
+}
+.cnt-img .image {
+  font-size: 33px;
+  margin: auto;
+}
+
+.about-cntbtn {
+  margin-top: 0;
+  margin-left: 31%;
+}
+
+.company {
+  padding-top: 7rem;
+}
+
+.service2 {
+  margin-top: -16rem;
+  margin-bottom: 4rem;
+}
+.footer {
+  padding-top: 3rem;
+}
+
+/* --------------------- Counter --------------------- */
+
+section:not(#section_container) {
+  height: 0vh;
+}
+.section-heading {
+  font-size: 2rem;
+}
+.about-container {
+  padding: 2rem 0;
+  background-color: rgb(24, 24, 24);
+}
+.about-counter-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+}
+.about-counter-item {
+  background-color: #302e2e;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  width: 20rem;
+}
+.about-counter-item:hover {
+  background-color: #940000;
+  transition: 0.2s;
+}
+
+.counter-img {
+  width: 10vw;
+  height: 20vh;
+  filter: drop-shadow(9px 12px 3px black);
+  cursor: pointer;
+}
+
+.counter-img:hover {
+  filter: drop-shadow(2px 4px 6px grey);
+  transition: 0.2s;
+}
+
+.about-counter-item .about-counter {
+  font-size: 3rem;
+  color: white;
+}
+
+.about-counter-items {
+  display: flex;
+  justify-content: center;
+  gap: 0em;
+  text-align: center;
+  align-items: center;
+}
+.about-counter-item h2 {
+  font-size: 25px;
+  width: 19rem;
+  text-align: center;
+  margin: auto;
+  margin-top: -1rem;
+}
+.about-counter-items span {
+  color: rgb(46, 189, 3);
+  font-size: 3rem;
+  font-weight: 600;
+}
+/* ------------------------ @Media ------------------------ */
+
+@media (max-width: 1080px) {
+  .about-counter-grid {
+    grid-template-columns: auto auto auto auto;
+    row-gap: 2rem;
+  }
+  .about-counter-item {
+    background-color: #302e2e;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    border-radius: 1rem;
+    width: 14rem;
+    height: 15rem;
+  }
+  .about-counter-item h2 {
+    font-size: 25px;
+    width: 11rem;
+    text-align: center;
+    margin: auto;
+    margin-top: -3rem;
+  }
+  .about-counter-item .about-counter {
+    font-size: 2rem;
+    color: white;
+  }
+  .about-counter-items {
+    margin-top: -1rem;
+  }
+  .about-counter-items span {
+    color: rgb(46, 189, 3);
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .service2 p {
+    width: 65vw;
+  }
+  .navbar li :last-child {
+    margin-left: 58px;
+    padding: 6px 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .company {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 962px) {
+  .company {
+    justify-content: space-evenly;
+  }
+  .navbar li :last-child {
+    margin-left: 46px;
+    padding: 6px 10px;
+  }
+  .work-with-us {
+    display: flex;
+    justify-content: space-around;
+  }
+  .work-with-us-section .work-with-us-head p {
+    width: auto;
+  }
+  .work-with-us-info p {
+    width: auto;
+  }
+  .service2 {
+    width: 85vw;
+    height: 43vh;
+  }
+  .about-cntbtn {
+    margin-top: 0;
+    margin-left: 37%;
+  }
+}
+@media (max-width: 900px) {
+  .work-with-us-img {
+    margin-top: 7rem;
+  }
+  .work-with-us-img .img1 {
+    width: 20rem;
+    height: 25rem;
+  }
+  .work-with-us-img .img2 {
+    width: 19rem;
+  }
+  .service2 {
+    margin-top: -10rem;
+    width: 85vw;
+    height: 52vh;
+  }
+  .misvis .mission {
+    background-color: rgb(29, 29, 29);
+    height: 65vh;
+    width: 50%;
+  }
+  .misvis .vision {
+    background-color: rgb(29, 29, 29);
+    height: 65vh;
+    width: 50%;
+  }
+  .misvis .mission h2 {
+    font-size: 2rem;
+  }
+  .misvis .vision h2 {
+    font-size: 2rem;
+  }
+  .misvis p {
+    font-size: 15px;
+  }
+  .navbar li :last-child {
+    margin-left: 42px;
+    padding: 6px 10px;
+  }
+  .about-counter-item {
+    width: 11rem;
+  }
+  .about-counter-item h2 {
+    font-size: 20px;
+    width: 8rem;
+    margin-top: -2rem;
+  }
+}
+@media (max-width: 810px) {
+  .navbar li :last-child {
+    margin-left: 10px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 601px) {
+  .about-head h1 {
+    font-size: 11vw;
+  }
+  .about-head p {
+    animation: opacity 2s;
+    width: 26rem;
+  }
+  .work-with-us-img .img1 {
+    width: 17rem;
+    height: 21rem;
+  }
+  .work-with-us-img .img2 {
+    width: 17rem;
+    height: 21rem;
+  }
+  .work-with-us-2 {
+    width: auto;
+    margin-left: auto;
+  }
+  .work-with-us-section .work-with-us-head h2 {
+    font-size: 29px;
+    width: 41vw;
+  }
+  .work-with-us-section .work-with-us-head p {
+    width: 38vw;
+  }
+  .work-line {
+    background-color: rgb(88, 84, 84);
+    width: 220px;
+  }
+  .work-with-us-info p {
+    width: 78%;
+  }
+  .misvis .mission {
+    height: 51vh;
+  }
+  .misvis .vision {
+    height: 51vh;
+  }
+  .misvis .mission h2 {
+    font-size: 18px;
+  }
+  .misvis .vision h2 {
+    font-size: 18px;
+  }
+  .misvis .mission p {
+    padding: 0 0rem;
+    width: 100%;
+    font-size: 12px;
+  }
+  .misvis .vision p {
+    padding: 0 0rem;
+    width: 100%;
+    font-size: 12px;
+  }
+  .numbers-head h2 {
+    font-size: 28px;
+  }
+  .about-counter-grid {
+    grid-template-columns: auto auto;
+    row-gap: 3rem;
+  }
+  .about-counter-item {
+    width: 16rem;
+    height: 17rem;
+  }
+  .counter-img {
+    width: 23vw;
+    height: 20vh;
+  }
+  .numbers-head p {
+    font-size: 15px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 51vw;
+  }
+  .about-counter-item h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .about-head {
+    background-size: 60rem;
+    background-position-y: -2rem;
+    padding-top: 14rem;
+  }
+  .about-head p {
+    font-size: 15px;
+    width: auto;
+  }
+  .work-with-us {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .work-with-us-img {
+    margin-top: -3rem;
+  }
+  .work-with-us-section .work-with-us-head h2 {
+    font-size: 29px;
+    width: auto;
+    text-align: center;
+  }
+  .work-with-us-section .work-with-us-head p {
+    width: auto;
+    text-align: center;
+  }
+  .work-line {
+    background-color: rgb(88, 84, 84);
+    width: 23rem;
+  }
+  .work-with-us-info p {
+    width: auto;
+    margin-left: 2rem;
+  }
+  .about-counter-item {
+    width: 10rem;
+    height: 12rem;
+  }
+  .numbers-head h2 {
+    font-size: 22px;
+  }
+  .about-counter-item h2 {
+    font-size: 13px;
+  }
+  .counter-img {
+    width: 19vw;
+    height: 18vh;
+  }
+  .about-counter-items {
+    margin: auto;
+  }
+  .misvis {
+    display: grid;
+    background-position-y: -4rem;
+  }
+  .misvis .mission {
+    width: auto;
+    margin-top: 8rem;
+  }
+  .misvis .vision {
+    width: auto;
+    margin-top: -2rem;
+  }
+  .misvis .mission h2 {
+    font-size: 21px;
+  }
+  .misvis .vision h2 {
+    font-size: 21px;
+  }
+  .misvis .mission p {
+    padding: 0 0rem;
+    width: 68%;
+    font-size: 13px;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .misvis .vision p {
+    padding: 0 0rem;
+    width: 68%;
+    font-size: 13px;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .numbers-head p {
+    font-size: 15px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 71vw;
+  }
+  .trust {
+    background-image: url(8.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-y: -10rem;
+    height: 76vh;
+    width: 98.6vw;
+  }
+  .about-cntbtn {
+    margin-top: auto;
+    margin-left: 37%;
+  }
+  .service2 {
+    margin-top: -10rem;
+    width: auto;
+    height: 52vh;
+  }
+}
+
+@media (max-width: 390px) {
+  .about-head h1 {
+    font-size: 15vw;
+  }
+  .about-head p {
+    width: auto;
+    font-size: 15px;
+  }
+  .work-with-us-2 {
+    width: 23rem;
+    margin-left: auto;
+  }
+  .trust {
+    width: 95.6vw;
+  }
+  .book-a-call {
+    margin-left: 3%;
+  }
+  .service2 {
+    margin-top: -10rem;
+    width: 85vw;
+    height: 46vh;
+  }
+  .service2 h2 {
+    font-size: 19px;
+  }
+  .about-counter-item {
+    width: 10rem;
+    height: 13rem;
+  }
+}
+@media (max-width: 375px) {
+  .about-head p {
+    width: 80%;
+    font-size: 13px;
+  }
+  .about-head {
+    padding-top: 18rem;
+    background-size: 94rem;
+    background-position-y: -2rem;
+  }
+  .counter-img {
+    width: 15vw;
+    height: 9vh;
+  }
+  .about-counter-item {
+    width: 10rem;
+    height: 24vh;
+  }
+  .about-counter-item h2 {
+    margin-bottom: 8px;
+  }
+  .book-a-call {
+    height: auto;
+  }
+  .service2 {
+    margin-top: -20rem;
+    width: 83vw;
+    height: 46vh;
+  }
+  .misvis {
+    display: grid;
+    background-position-y: 23rem;
+    background-size: contain;
+  }
+  .about-cntbtn {
+    margin-top: auto;
+    margin-left: 28%;
+  }
+}
+
+@media (max-width: 321px) {
+  .work-with-us-2 {
+    width: 18rem;
+    margin-left: 0rem;
+  }
+  .work-with-us-head {
+    background-color: rgb(36, 36, 29);
+  }
+  .work-with-us-info {
+    background-color: rgb(36, 36, 29);
+  }
+  .work-with-us-img {
+    margin-top: 1rem;
+  }
+  .work-with-us-img .img1 {
+    width: 15rem;
+    height: 19rem;
+  }
+  .work-with-us-img .img2 {
+    width: 15rem;
+    height: 19rem;
+  }
+  .misvis .mission {
+    width: 19rem;
+    margin-top: 8rem;
+  }
+  .misvis .vision {
+    width: 19rem;
+    margin-top: 0rem;
+  }
+  .about-counter-item {
+    width: 9rem;
+    height: 24vh;
+  }
+  .about-counter-item h2 {
+    margin-bottom: 8px;
+    margin-left: -18px;
+  }
+  .service2 {
+    margin-top: -17rem;
+    width: auto;
+    height: 46vh;
+  }
+  .about-cntbtn {
+    margin-top: -23px;
+    margin-left: 37%;
+  }
+}
